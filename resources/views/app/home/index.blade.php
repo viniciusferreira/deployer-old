@@ -9,7 +9,7 @@
 @section('content')
     <div class="panel panel-default">
         <div class="table-responsive">
-            <table class="table table-hover">
+            <table class="table table-lg">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -22,12 +22,12 @@
                     <tr>
                         <td>1</td>
                         <td><a href="/projects/1">Deployer</a></td>
-                        <td><a href="http://github.com/baconfy/deployer"><i class="fa fa-github"></i> baconfy/deployer</a></td>
+                        <td><a target="_blank" href="http://github.com/baconfy/deployer"><i class="fa fa-github"></i> baconfy/deployer</a></td>
                         <td>20/06/2015</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><a href="/projects/2">Tasks</a></td>
+                        <td><a target="_blank" href="/projects/2">Tasks</a></td>
                         <td><a href="http://github.com/baconfy/tasks"><i class="fa fa-github"></i> baconfy/tasks</a></td>
                         <td>20/06/2015</td>
                     </tr>
@@ -36,23 +36,5 @@
         </div>
     </div>
 
-    <div class="modal fade" id="add-project">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title"><i class="fa fa-paper-plane"></i> Add Project</h4>
-                </div>
-
-                <div class="modal-body">
-                    @include('app.projects.form')
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('app.modals.add-project')
 @stop
