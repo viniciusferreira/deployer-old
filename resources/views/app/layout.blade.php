@@ -1,35 +1,51 @@
 @extends('app.empty')
 
 @section('page')
-    <div class="off-canvas-wrap" data-offcanvas>
-        <div class="inner-wrap">
-            <nav class="tab-bar">
-                <section class="left-small">
-                    <a class="left-off-canvas-toggle menu-icon"><span></span></a>
-                </section>
+    <div class="contain-to-grid sticky">
+        <div class="section-nav">
+            <nav class="top-bar" data-topbar role="navigation">
+                <ul class="title-area">
+                    <li class="name"><h1><a href="#">Deployer</a></h1></li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                </ul>
 
-                <section class="middle tab-bar-section">
-                    <h1 class="title">Deployer</h1>
-                </section>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li class="active"><a href="#"></a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Renato Dehnhardt</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                <section class="right-small">
-                    <a class="right-off-canvas-toggle menu-icon"><span></span></a>
+                    <ul class="left">
+                        <li><a href="#">Dashboard</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Projects</a>
+                            <ul class="dropdown">
+                                <li><a href="#">WebStage</a></li>
+                                <li><a href="#">MAQDEN</a></li>
+                                <li><a href="#">Classificars</a></li>
+                                <li><a href="#">FullSystem</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </section>
             </nav>
+        </div>
 
-            <aside class="left-off-canvas-menu">
-
-            </aside>
-
-            <aside class="right-off-canvas-menu">
-                DIREITA
-            </aside>
-
-            <section class="main-section">
-                @yield('content')
-            </section>
-
-            <a class="exit-off-canvas"></a>
+        <div class="section-header">
+            <div class="row">
+                <div class="small-6 large-6 columns">
+                    <h2 class="subheader">Homologa</h2>
+                </div>
+                <div class="small-6 large-6 columns text-right">
+                    <a href="#" class="button small"><i class="fa fa-cog"></i> Settings</a>
+                </div>
+            </div>
         </div>
     </div>
 @stop
