@@ -1,8 +1,8 @@
 {
-  "name":"baconfy/deployer",
+  "name": "baconfy/deployer",
   "version": "0.0.0",
   "private": "false",
   "dependencies": {
-    "foundation":"*"
+    "bootstrap-sass": "~3.3.5"
   }
 }

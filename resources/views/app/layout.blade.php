@@ -1,50 +1,61 @@
 @extends('app.empty')
 
 @section('page')
-    <div class="contain-to-grid sticky">
-        <div class="section-nav">
-            <nav class="top-bar" data-topbar role="navigation">
-                <ul class="title-area">
-                    <li class="name"><h1><a href="#">Deployer</a></h1></li>
-                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Deployer</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Dashboard</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="themes">
+                            <li><a href="/projects/1">Deployer</a></li>
+                            <li><a href="/projects/2">Tasks</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <section class="top-bar-section">
-                    <ul class="right">
-                        <li class="active"><a href="#"></a></li>
-                        <li class="has-dropdown">
-                            <a href="#">Renato Dehnhardt</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Account</a></li>
-                                <li><a href="#">Settings</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="left">
-                        <li><a href="#">Dashboard</a></li>
-                        <li class="has-dropdown">
-                            <a href="#">Projects</a>
-                            <ul class="dropdown">
-                                <li><a href="#">WebStage</a></li>
-                                <li><a href="#">MAQDEN</a></li>
-                                <li><a href="#">Classificars</a></li>
-                                <li><a href="#">FullSystem</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Renato Dehnhardt <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="themes">
+                            <li><a href="../default/">Account</a></li>
+                            <li><a href="../cerulean/">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
 
-        <div class="section-header">
+    <div class="container">
+        <div id="banner" class="page-header">
             <div class="row">
-                <div class="small-6 large-6 columns">
-                    <h2 class="subheader">Homologa</h2>
+                <div class="col-lg-8 col-md-7 col-sm-6">
+                    <h2 class="title">@yield('header-title')</h2>
                 </div>
-                <div class="small-6 large-6 columns text-right">
-                    <a href="#" class="button small"><i class="fa fa-cog"></i> Settings</a>
+
+                <div class="col-lg-4 col-md-5 col-sm-6 text-right">
+                    @yield('header-actions')
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                @yield('content')
             </div>
         </div>
     </div>
