@@ -15,4 +15,16 @@ class ProjectController extends Controller
         return view('app.projects.show', compact('project'));
     }
 
+    public function settings($project)
+    {
+        $project = [
+            'name' => ($project == 1 ? 'Deployer' : 'Tasks'),
+            'repository' => ($project == 1 ? 'baconfy/deployer' : 'baconfy/tasks'),
+            'provider' => 'github',
+            'branch' => 'master',
+        ];
+
+        return view('app.projects.settings', compact('project'));
+    }
+
 }

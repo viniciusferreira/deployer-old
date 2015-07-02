@@ -3,7 +3,8 @@
 @section('header-title', $project['name'])
 
 @section('header-actions')
-    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#project-settings"><i class="fa fa-cog"></i> Settings</a>
+    <a href="/projects/1/settings" class="btn btn-default"><i class="fa fa-cog"></i> Settings</a>
+    <a href="" class="btn btn-primary"><i class="fa fa-cloud-upload"></i> Deploy</a>
 @stop
 
 @section('content')

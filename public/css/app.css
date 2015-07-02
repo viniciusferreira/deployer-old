@@ -9,8 +9,9 @@ body {
       padding: 0;
       margin: 0; }
   body .tab-pane .title {
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 5px; }
+    border-bottom: 1px dotted #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 25px; }
     body .tab-pane .title span {
       margin-top: 10px;
       font-size: 20px;
