@@ -58,10 +58,7 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">Post-Deploy Health</h3>
                 </div>
-                <div class="panel-body text-center">
-                    <h4>Response Ok</h4>
-                    <a href="#" class="btn btn-default btn-sm">View Response</a>
-                </div>
+                <div class="panel-body text-center" data-ajax-content="true" data-href="/projects/1/health" data-interval="5"></div>
             </div>
         </div>
     </div>

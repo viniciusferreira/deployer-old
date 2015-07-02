@@ -16,6 +16,8 @@ body {
       margin-top: 10px;
       font-size: 20px;
       display: block; }
+  body .form-actions {
+    padding-top: 20px; }
 
 .btn-glyphicon {
   padding: 8px;

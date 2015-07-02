@@ -27,4 +27,13 @@ class ProjectController extends Controller
         return view('app.projects.settings', compact('project'));
     }
 
+    public function health($project)
+    {
+        $project = [
+            'name' => ($project == 1 ? 'Deployer' : 'Tasks'),
+        ];
+
+        return view('app.projects.health', compact('project'));
+    }
+
 }

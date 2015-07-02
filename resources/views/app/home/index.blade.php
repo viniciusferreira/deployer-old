@@ -36,5 +36,5 @@
         </div>
     </div>
 
-    @include('app.modals.add-project')
+    @include('app.modals.add-project', ['project' => []])
 @stop

@@ -25,6 +25,7 @@
         <td><a href="https://github.com/rdehnhardt/deployer/commit/badc6d10ea4c4ef749a9347cdfddcd21884fefa9">badc6d10</a> (master)</td>
         <td><i class="fa fa-check"></i> Succesful</td>
         <td nowrap>
+            <a href="/projects/1/deployments/1" class="btn btn-default btn-xs"><i class="fa fa-cloud-upload"></i></a>
             <a href="/projects/1/deployments/1" class="btn btn-default btn-xs"><i class="fa fa-arrow-right"></i></a>
         </td>
     </tr>
