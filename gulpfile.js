@@ -6,7 +6,10 @@ elixir(function (mix) {
 
     mix.sass('app.scss');
 
-    mix.scripts(["vendor/bower/modernizr/modernizr.js"], 'public/js/modernizr.js', './');
+    mix.scripts([
+        "vendor/bower/modernizr/modernizr.js"
+    ], 'public/js/modernizr.js', './');
+
     mix.scripts([
         "vendor/bower/jquery/dist/jquery.js",
         "vendor/bower/fastclick/lib/fastclick.js",
