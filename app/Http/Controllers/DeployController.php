@@ -12,4 +12,13 @@ class DeployController extends Controller
         return view('app.deploy.show', compact('deployment'));
     }
 
+    public function hooks($project, $hook)
+    {
+        $deployment = [
+            'project' => ($project == 1 ? 'Deployer' : 'Tasks'),
+        ];
+
+        return view('app.deploy.hooks', compact('deployment'));
+    }
+
 }
