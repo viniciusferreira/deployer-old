@@ -51,8 +51,24 @@
                         <td>Optimize</td>
                         <td>root</td>
                         <td nowrap>
-                            <a href="#" class="btn btn-default btn-xs"><i class="fa fa-pencil"></i> Edit</a>
-                            <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Remove</a>
+                            <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-trash"></i> Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Route Cache</td>
+                        <td>root</td>
+                        <td nowrap>
+                            <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-trash"></i> Remove</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Run Migrations</td>
+                        <td>root</td>
+                        <td nowrap>
+                            <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-trash"></i> Remove</a>
                         </td>
                     </tr>
                     </tbody>
@@ -60,4 +76,6 @@
             </div>
         </div>
     </div>
+
+    @include('app.modals.configure-hook')
 @stop
