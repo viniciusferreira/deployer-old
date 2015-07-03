@@ -3,7 +3,7 @@
 @section('header-title', "{$deployment['project']} » Deployement View")
 
 @section('header-actions')
-    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#project-settings"><i class="fa fa-cog"></i> Settings</a>
+    <a href="/projects/1" class="btn btn-default"><i class="fa fa-arrow-left"></i> Back</a>
 @stop
 
 @section('content')
