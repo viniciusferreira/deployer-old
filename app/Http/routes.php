@@ -1,5 +1,9 @@
 <?php
 
+Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
+    Route::resource('project', 'ProjectController');
+});
+
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
 Route::get('/projects/{project}', ['as' => 'project', 'uses' => 'ProjectController@show']);
