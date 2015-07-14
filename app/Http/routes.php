@@ -2,6 +2,12 @@
 
 Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
     Route::resource('project', 'ProjectController');
+    Route::resource('project.deployment', 'DeploymentController');
+    Route::resource('project.server', 'ServerController');
+    Route::resource('project.deployment-hook', 'DeploymentHookController');
+    Route::resource('project.heartbeat', 'HeartbeatController');
+    Route::resource('project.notification', 'NotificationController');
+    Route::resource('project.collaborator', 'CollaboratorController');
 });
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
