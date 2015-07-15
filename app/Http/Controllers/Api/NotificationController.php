@@ -7,7 +7,6 @@ use App\Http\Requests;
 
 class NotificationController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -88,5 +87,4 @@ class NotificationController extends Controller
     {
         //
     }
-
 }

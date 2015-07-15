@@ -2,7 +2,6 @@
 
 class DeployController extends Controller
 {
-
     public function show($project, $id)
     {
         $deployment = [
@@ -20,5 +19,4 @@ class DeployController extends Controller
 
         return view('app.deploy.hooks', compact('deployment'));
     }
-
 }

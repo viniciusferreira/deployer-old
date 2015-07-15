@@ -2,7 +2,6 @@
 
 class ProjectController extends Controller
 {
-
     public function show($id)
     {
         $project = [
@@ -35,5 +34,4 @@ class ProjectController extends Controller
 
         return view('app.projects.health', compact('project'));
     }
-
 }
