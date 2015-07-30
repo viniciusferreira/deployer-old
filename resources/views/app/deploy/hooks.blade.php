@@ -12,7 +12,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group pull-right">
-                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> Add</a>
+                        <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-plus"></i> Add</a>
                     </div>
 
                     <h3 class="panel-title"><i class="fa fa-code"></i> Before this action</h3>
@@ -32,7 +32,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="btn-group pull-right">
-                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> Add</a>
+                        <a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#configure-hook"><i class="fa fa-plus"></i> Add</a>
                     </div>
 
                     <h3 class="panel-title"><i class="fa fa-code"></i> After this action</h3>

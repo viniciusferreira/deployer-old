@@ -1,4 +1,4 @@
-<div class="modal fade" id="add-server">
+<div class="modal fade" id="hook-output">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

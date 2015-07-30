@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">Run As</label>
+                        <label for="inputEmail3" class="col-sm-3 control-label">Script</label>
 
                         <div class="col-sm-9">
                             <textarea class="form-control" rows="10"></textarea>
@@ -35,7 +35,17 @@
                         <div class="col-sm-9">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" checked> Receives Code Deployments
+                                    <input type="checkbox" checked> Digital Ocean (104.98.210.178)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked> Digital Ocean (104.98.210.157)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked> Digital Ocean (104.98.210.148)
                                 </label>
                             </div>
                         </div>
