@@ -1,4 +1,4 @@
-@extends('app.empty')
+@extends('front.empty')
 
 @section('page')
     <div class="navbar navbar-default navbar-fixed-top">

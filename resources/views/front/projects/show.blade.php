@@ -1,4 +1,4 @@
-@extends('app.layout')
+@extends('front.layout')
 
 @section('header-title', $project['name'])
 

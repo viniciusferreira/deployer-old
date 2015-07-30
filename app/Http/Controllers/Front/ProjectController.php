@@ -13,7 +13,7 @@ class ProjectController extends Controller
             'branch' => 'master',
         ];
 
-        return view('app.projects.show', compact('project'));
+        return view('front.projects.show', compact('project'));
     }
 
     public function settings($project)
@@ -25,7 +25,7 @@ class ProjectController extends Controller
             'branch' => 'master',
         ];
 
-        return view('app.projects.settings', compact('project'));
+        return view('front.projects.settings', compact('project'));
     }
 
     public function health($project)
@@ -34,6 +34,6 @@ class ProjectController extends Controller
             'name' => ($project == 1 ? 'Deployer' : 'Tasks'),
         ];
 
-        return view('app.projects.health', compact('project'));
+        return view('front.projects.health', compact('project'));
     }
 }

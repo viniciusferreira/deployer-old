@@ -7,7 +7,7 @@
             </div>
 
             <div class="modal-body">
-                @include('app.projects.form')
+                @include('front.projects.form')
             </div>
         </div>
     </div>

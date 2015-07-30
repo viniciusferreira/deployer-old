@@ -1,4 +1,4 @@
-@extends('app.layout')
+@extends('front.layout')
 
 @section('header-title', 'Dashboard')
 
@@ -36,5 +36,5 @@
         </div>
     </div>
 
-    @include('app.modals.add-project', ['project' => []])
+    @include('front.modals.add-project', ['project' => []])
 @stop
